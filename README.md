@@ -68,6 +68,21 @@ The MVP is intentionally scoped to address core decision-support loops without b
 
 ---
 
+## Problem Discovery
+
+Phase 1 establishes the empirical and analytical foundation of the user problem space:
+
+* [Problem Statement & Framing](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/01-Problem-Discovery/problem-statement.md): Root causes vs. symptoms, information asymmetry, and problem hypotheses.
+* [User Pain Points Matrix](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/01-Problem-Discovery/user-pain-points.md): Stage-by-stage analysis across Discover, Understand, Evaluate, Prioritize, Act, and Track.
+* [User Personas](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/01-Problem-Discovery/user-personas.md): Archetypes for the final-year technical senior and the cross-disciplinary career pivot.
+* [Jobs to Be Done (JTBD)](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/01-Problem-Discovery/jobs-to-be-done.md): Core functional, emotional, and social progress statements.
+* [Current State User Journey](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/01-Problem-Discovery/user-journey.md): As-is workflow breakdowns, friction points, and drop-off risks.
+* [Root Cause Analysis](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/01-Problem-Discovery/root-cause-analysis.md): 5 Whys and Problem Tree diagnosing why decision paralysis occurs.
+* [Opportunity Areas](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/01-Problem-Discovery/opportunity-areas.md): Strategic value vectors and validation priorities.
+* [Problem Prioritization](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/01-Problem-Discovery/problem-prioritization.md): Qualitative evaluation, scope boundaries, and explicit non-goals.
+
+---
+
 ## Product Management Case Study Structure
 
 This repository is organized into modular product case study artifacts:
@@ -89,7 +104,7 @@ This repository is organized into modular product case study artifacts:
 
 ## Project Status
 
-> **Status:** Discovery & Foundation Phase (Phase 0)  
-> **Phase Goal:** Establishing strategic foundations, taxonomy, and methodology standards before detailed artifact authoring.
+> **Status:** Phase 1 Complete (Problem Discovery)  
+> **Current Milestone:** Problem framing, user pain points, root causes, JTBDs, and scope boundaries established. Ready for Phase 2 (Product Strategy).
 
 *Note: This repository contains an analytical product strategy and design case study. It does not assert pre-existing commercial adoption, unvalidated revenue figures, or synthetic user validation metrics.*
