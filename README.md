@@ -150,6 +150,19 @@ Phase 7 establishes a scientific experimentation and progressive uncertainty red
 * [Decision Rules & Traceability](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/07-Experimentation/decision-rules.md): Post-experiment decision taxonomy (Positive, Mixed, Neutral, Negative, Kill-Switch) and end-to-end traceability matrix.
 * [Experimentation Decision Log](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/07-Experimentation/experimentation-decision-log.md): 6 research decision records detailing rationales, alternatives, consequences, and revisit triggers.
 
+## Product Roadmap
+
+Phase 8 establishes a dependency-aware, experiment-gated execution roadmap and release strategy:
+
+* [Phase 8 Overview & Directory](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/08-Roadmap/README.md): Methodology summary, PM interview walkthrough, risk management, and master traceability matrix.
+* [Roadmap Strategy & Philosophy](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/08-Roadmap/roadmap-strategy.md): Outcome-oriented roadmap principles, decision loop focus, and anti-fabrication standards.
+* [MVP Release Roadmap (Increments 1–4)](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/08-Roadmap/mvp-release-roadmap.md): 4-increment execution breakdown (Foundation ➔ Intelligence ➔ Decision ➔ Polish) with master roadmap table.
+* [Now / Next / Later Framework](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/08-Roadmap/now-next-later.md): Operational capability horizons (NOW, NEXT, LATER) and permanent non-goals / anti-goals.
+* [Product Dependency Roadmap](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/08-Roadmap/dependency-roadmap.md): Critical path dependency graph and capability prerequisite matrix (Hard, Soft, and Validation dependencies).
+* [Product Release Plan](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/08-Roadmap/release-plan.md): Staged rollout specifications (Release 0 through Release 3) with validation exit gates and rollback conditions.
+* [Post-MVP Product Roadmap](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/08-Roadmap/post-mvp-roadmap.md): Long-term capability themes (Reliability, Portfolio Intelligence, Workflow Depth, Market Radar).
+* [Roadmap Decision Log](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/08-Roadmap/roadmap-decision-log.md): 7 interview-defensible strategic roadmap decisions (RD-01 to RD-07) detailing trade-offs and revisit triggers.
+
 ---
 
 ## Product Management Case Study Structure
@@ -182,9 +195,9 @@ This repository is organized into modular product case study artifacts:
 | **Phase 5** | **Product Prioritization** | **Complete** | [05-Prioritization/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/05-Prioritization) (DAVR Framework, Scored Backlog, 6 Trade-offs, Dependency Map, Decision Log) |
 | **Phase 6** | **Metrics & Telemetry** | **Complete** | [06-Metrics/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/06-Metrics) (North Star Metric W-HCCD, Metric Hierarchy, Event Taxonomy, Funnel Diagnostics) |
 | **Phase 7** | **Experimentation** | **Complete** | [07-Experimentation/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/07-Experimentation) (Hypothesis Backlog, 5 Experiment Designs, Validation Roadmap, Decision Rules) |
-| **Phase 8** | **Product Roadmap** | *Pending* | Phased Capability Progression (Now / Next / Later) |
+| **Phase 8** | **Product Roadmap** | **Complete** | [08-Roadmap/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/08-Roadmap) (Roadmap Strategy, MVP Increments, Now/Next/Later, Dependencies, Release Plan) |
 | **Phase 9** | **Business Model & Unit Economics** | *Pending* | Monetization Hypotheses, Unit Economics & Business Risks |
 
-> **Current Milestone:** Phase 7 Complete — Ready for Phase 8 (Product Roadmap)
+> **Current Milestone:** Phase 8 Complete — Ready for Phase 9 (Business & Commercial Strategy)
 
 *Note: This repository contains an analytical product strategy and design case study. It does not assert pre-existing commercial adoption, unvalidated revenue figures, or synthetic user validation metrics.*
