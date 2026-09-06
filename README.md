@@ -114,6 +114,17 @@ Phase 4 establishes the formal, implementation-ready Product Requirements Docume
 * [Product Requirements Document (PRD)](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/04-PRD/prd.md): Comprehensive 20-section specification covering goals, MVP functional requirements (CP, JD, PS, FA, PR, TR), NFRs, AI trust guardrails, edge cases, risks, and decision logs.
 * [Acceptance Criteria Specification](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/04-PRD/acceptance-criteria.md): Formal Gherkin (Given/When/Then) testable criteria for all core workflows (resume parsing, fit decomposition, gap severity classification, snapshot preservation).
 
+## Product Prioritization
+
+Phase 5 establishes a structured, dependency-aware prioritization framework and trade-off analysis:
+
+* [Phase 5 Overview & Directory](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/05-Prioritization/README.md): Methodology summary, scoring formula, and tier definitions.
+* [Prioritization Framework & Principles](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/05-Prioritization/prioritization-framework.md): Dependency-Aware Value-Risk Framework (DAVR), qualitative proxies, and 6 governing principles.
+* [Feature Backlog & MVP Scenarios](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/05-Prioritization/feature-backlog.md): Scored backlog of 22 capabilities, constrained MVP boundaries, and the "3-Thing Extreme MVP" evaluation.
+* [Strategic Trade-off Analysis](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/05-Prioritization/trade-off-analysis.md): Deep dive into 6 critical trade-offs and explicit documentation of what was sacrificed.
+* [Dependency Map & Critical Path](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/05-Prioritization/dependency-map.md): Topological sequencing, hard blockers, soft enhancers, and 4-sprint release path.
+* [Prioritization Decision Log](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/05-Prioritization/prioritization-decision-log.md): 6 interview-defensible decision records with context, rationales, and revisit triggers.
+
 ---
 
 ## Product Management Case Study Structure
@@ -137,7 +148,7 @@ This repository is organized into modular product case study artifacts:
 
 ## Project Status
 
-> **Status:** Phase 4 Complete (Product Requirements Document - PRD)  
-> **Current Milestone:** Complete PRD specification, functional requirements, Gherkin acceptance criteria, AI guardrails, and decision logs locked. Ready for Phase 5 (Product Prioritization).
+> **Status:** Phase 5 Complete (Product Prioritization)  
+> **Current Milestone:** Prioritization framework (DAVR), scored backlog, trade-offs, dependency critical path, and decision logs locked. Ready for Phase 6 (Metrics & Telemetry).
 
 *Note: This repository contains an analytical product strategy and design case study. It does not assert pre-existing commercial adoption, unvalidated revenue figures, or synthetic user validation metrics.*
