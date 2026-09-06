@@ -1,219 +1,246 @@
 # AI Career Copilot
 
-An AI-powered career decision-support system helping college graduates and early-career job seekers identify high-fit opportunities, understand alignment, and focus effort on the right career moves.
+## AI Career Decision-Support Product
+
+**AI Career Copilot** is an evidence-grounded career decision-support system designed to help college graduates and early-career job seekers navigate qualification ambiguity, evaluate job-fit transparently, and focus their limited application bandwidth on high-conviction opportunities.
+
+Rather than automating low-intent mass-application spam or outputting arbitrary "match percentages," the product acts as an intelligent decision partner that transforms career search from an anxious volume game into a targeted, high-confidence strategy.
+
+```
+┌─────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                   EXECUTIVE VALUE SUMMARY                                   │
+│                                                                                             │
+│   PROBLEM          ──▶   SOLUTION          ──▶   DECISION          ──▶   TARGET OUTCOME     │
+│   Career Decision        Evidence-Grounded       "Which opportunities    Higher-Confidence  │
+│   Overload & Fatigue     Job-Fit Intelligence    deserve my time?"       Career Decisions   │
+└─────────────────────────────────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
-## Project Overview
+## The Problem
 
-**AI Career Copilot** is a portfolio-grade Product Management case study designed to demonstrate end-to-end product thinking—from discovery, problem framing, and strategic positioning to PRD specification, metric architecture, and product experimentation.
+Early-career job seekers—specifically final-year STEM/business students and recent graduates—face severe decision friction when navigating entry-level job markets:
 
-Unlike standard job-search aggregators or mass-application bots, this product focuses on the **decision-making bottlenecks** candidates face when navigating early-career job markets.
+* **Job-Description Ambiguity:** Postings are bloated with unrealistic "wish lists" of 10+ tools and vague experience requirements, making it impossible to distinguish hard prerequisites from learnable tools.
+* **Self-Assessment Anxiety & Blindspots:** Candidates suffer from imposter syndrome and qualification self-doubt, leading either to irrational self-rejection or unfocused "spray-and-pray" mass applying.
+* **False Precision of Match Scores:** Existing tools output opaque, single-number percentage scores (e.g., "78% Match") without explaining *why* or what evidence was used.
+* **Context Fragmentation & Broken Links:** Job postings frequently expire (404) once applications close, leaving candidates without their original analysis or preparation talking points during interview calls.
+* **Candidate Agency Erosion:** Opaque algorithms and auto-apply bots remove the candidate from the driver's seat, generating low-intent application volume that degrades recruiter trust.
+
+---
+
+## The Product
+
+AI Career Copilot is a transparent career decision workspace that extracts verified evidence from a candidate's background, normalizes raw job descriptions into structured requirement categories, and delivers quote-cited fit evaluations and prioritized triage queues.
+
+The product operates across a closed, 6-stage decision loop:
 
 ```
 DISCOVER  ──▶  UNDERSTAND  ──▶  EVALUATE  ──▶  PRIORITIZE  ──▶  ACT  ──▶  TRACK
 ```
 
----
-
-## Problem
-
-Job seekers—specifically final-year students and recent graduates—are overwhelmed by the sheer volume of fragmented job listings across multiple platforms. The core breakdown is not a lack of job listings, but a breakdown in candidate decision-making:
-
-1. **Relevance Uncertainty**: Difficulty determining whether a job is genuinely relevant to their current skill profile and background.
-2. **Explainability Deficit**: Job descriptions are ambiguous and rarely explain *why* a candidate is or is not a strong match.
-3. **Bandwidth Dilution**: High volume of low-signal opportunities leads candidates to waste limited time on low-probability applications.
-4. **Action & Skill Ambiguity**: Candidates struggle to identify specific missing qualifications or determine the immediate next best action to improve their candidacy.
-5. **Workflow Fragmentation**: Application tracking, notes, deadlines, and follow-ups are scattered across bookmarks, spreadsheets, and inbox threads.
+1. **Discover:** Candidate brings job postings from any job board or source.
+2. **Understand:** System structures the raw JD into a 4-category requirement taxonomy.
+3. **Evaluate:** Multi-dimensional fit engine generates quote-grounded matches and gap severity ratings.
+4. **Prioritize:** Automated 3-tier queue triages roles into *Apply Now*, *Targeted Upskill*, or *Archive*.
+5. **Act:** Candidate uses tailored resume framing cues and interview talking points to apply.
+6. **Track:** System stores an immutable local JD snapshot and updates the unified Kanban pipeline.
 
 ---
 
 ## Target User
 
-### Primary Target Segment
-* **Profile**: Final-year undergraduate/graduate students and recent graduates (< 1 year post-graduation) actively seeking their first full-time professional role.
-* **Target Roles**:
-  * Data Analyst
-  * Data Scientist
-  * AI / ML Engineer
-  * GenAI Developer
-  * Software Engineer
-  * Business Analyst
-  * Product Analyst
-  * AI Product Analyst
+### Primary Beachhead Segment
+* **Profile:** Final-year undergraduate/graduate students and recent graduates (0–2 years experience) in technical and analytical disciplines.
+* **Target Disciplines:** Computer Science, Data Science, Information Systems, Business Analytics, Industrial Engineering, Statistics.
+* **Target Roles:** Data Analyst, Business Analyst, Product Analyst, Entry-Level Data Engineer, Associate Software/ML Engineer.
+* **Core Pain:** Transitioning academic projects, coursework, and internships into commercial job requirements under tight graduation deadlines.
 
 ---
 
-## Product Vision
+## Core Product Experience
 
-> **"Empower early-career candidates to make high-conviction career decisions by clarifying opportunity fit, explaining the reasoning behind matches, and guiding them toward focused, high-yield actions."**
-
-Rather than automating spam applications, AI Career Copilot acts as an intelligent decision partner that transforms career search from an unstructured, high-anxiety volume game into a targeted, transparent, and strategic process.
-
----
-
-## Initial MVP Scope
-
-The MVP is intentionally scoped to address core decision-support loops without building unvalidated automation.
-
-| MVP Capability | Objective & User Value |
-| :--- | :--- |
-| **1. Candidate Profile** | Captures candidate skills, projects, coursework, preferences, and role targets to establish a structured baseline. |
-| **2. Job Discovery** | Ingests and surfaces relevant job openings aligned with target role profiles. |
-| **3. Job-Fit Analysis** | Computes multi-dimensional alignment and provides explainable reasoning (strengths, gaps, requirements). |
-| **4. Job Prioritization** | Ranks and classifies opportunities (e.g., High Fit, Stretch, Low Match) to optimize applicant time allocation. |
-| **5. Application Tracking** | Provides a centralized status pipeline to organize, monitor, and manage active application lifecycles. |
-
-*Out of Scope for MVP:* Automatic submission/auto-applying, automated outreach messaging, external recruiter integration.
+```
+┌──────────────────┐      ┌──────────────────┐      ┌────────────────────────┐
+│ Candidate Resume │ ──▶  │  Raw JD Ingestion│ ──▶  │ 4-Category Taxonomy    │
+│ & Project Base   │      │  (100% Reliable) │      │ Structuring (Prereqs)  │
+└──────────────────┘      └──────────────────┘      └────────────────────────┘
+                                                                 │
+                                                                 ▼
+┌──────────────────┐      ┌──────────────────┐      ┌────────────────────────┐
+│ Kanban Pipeline  │ ◀──  │ 3-Tier Triage    │ ◀──  │ Grounded Fit Engine    │
+│ & Local Snapshot │      │ Queue & Override │      │ (Quote Match + Gaps)   │
+└──────────────────┘      └──────────────────┘      └────────────────────────┘
+```
 
 ---
 
-## Problem Discovery
+## Key Product Decisions
 
-Phase 1 establishes the empirical and analytical foundation of the user problem space:
+The following strategic trade-offs define the architecture and product principles of AI Career Copilot:
 
-* [Problem Statement & Framing](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/01-Problem-Discovery/problem-statement.md): Root causes vs. symptoms, information asymmetry, and problem hypotheses.
-* [User Pain Points Matrix](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/01-Problem-Discovery/user-pain-points.md): Stage-by-stage analysis across Discover, Understand, Evaluate, Prioritize, Act, and Track.
-* [User Personas](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/01-Problem-Discovery/user-personas.md): Archetypes for the final-year technical senior and the cross-disciplinary career pivot.
-* [Jobs to Be Done (JTBD)](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/01-Problem-Discovery/jobs-to-be-done.md): Core functional, emotional, and social progress statements.
-* [Current State User Journey](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/01-Problem-Discovery/user-journey.md): As-is workflow breakdowns, friction points, and drop-off risks.
-* [Root Cause Analysis](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/01-Problem-Discovery/root-cause-analysis.md): 5 Whys and Problem Tree diagnosing why decision paralysis occurs.
-* [Opportunity Areas](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/01-Problem-Discovery/opportunity-areas.md): Strategic value vectors and validation priorities.
-* [Problem Prioritization](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/01-Problem-Discovery/problem-prioritization.md): Qualitative evaluation, scope boundaries, and explicit non-goals.
-
-## Product Strategy
-
-Phase 2 translates problem-discovery findings into an integrated product and market strategy:
-
-* [Product Vision & Mission](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/02-Product-Strategy/product-vision.md): 3-horizon evolution, intended user/business outcomes, and core vision rationale.
-* [Target Segment & ICP](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/02-Product-Strategy/target-segment.md): 7-dimensional segmentation, Ideal Customer Profile, and explicit out-of-scope boundaries.
-* [Value Proposition](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/02-Product-Strategy/value-proposition.md): Value proposition statement and 3 core pillars (Explainability, Priority Intelligence, Integrated Pipeline).
-* [Product Positioning](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/02-Product-Strategy/positioning.md): Competitive landscape analysis vs. job boards, generic LLMs, and auto-apply spam tools.
-* [Product Principles](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/02-Product-Strategy/product-principles.md): 6 decision-making principles (Explainability over black-box, User agency, Calibrated uncertainty).
-* [Product Goals & Outcomes](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/02-Product-Strategy/product-goals.md): Strategic North Star direction, User/Product/Business qualitative goal hierarchies, and Non-Goals.
-* [Strategic Constraints & Mitigations](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/02-Product-Strategy/strategic-constraints.md): Operational, privacy, and LLM uncertainty constraints with a 6-tier qualification taxonomy.
-* [Strategic Trade-offs](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/02-Product-Strategy/strategic-trade-offs.md): Critical architectural and scope trade-offs (Breadth vs. Depth, Automation vs. Agency, Score vs. Explainability).
-
-## User Experience
-
-Phase 3 translates strategic value pillars into concrete, evidence-backed user flows, interaction models, and screen specifications:
-
-* [End-to-End User Flow](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/03-User-Experience/user-flow.md): Step-by-step lifecycle from onboarding to pipeline tracking, critical moments, and trust barriers.
-* [Core User Workflow](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/03-User-Experience/core-user-workflow.md): 9-step decision loop fulfilling the primary JTBD in <90 seconds.
-* [Job-Fit Analysis UX](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/03-User-Experience/job-fit-analysis-ux.md): Explainability specification, qualitative fit tiers, evidence citations, and gap severity tiers.
-* [Application Tracking UX](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/03-User-Experience/application-tracking-ux.md): 9-state pipeline lifecycle, immutable local snapshot schema, and interview context retrieval.
-* [User Stories (MoSCoW)](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/03-User-Experience/user-stories.md): Prioritized MVP stories across Candidate Profile, Discovery, Fit Analysis, Prioritization, and Tracking.
-* [UX Principles](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/03-User-Experience/ux-principles.md): 6 interaction principles (Explain before recommending, Ground in evidence, Zero hidden uncertainty).
-* [Wireframe Specifications](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/03-User-Experience/wireframe-specification.md): Low-fidelity structural specifications for 8 core application screens.
-* [UX Decisions & AI Safety](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/03-User-Experience/ux-decisions-and-safety.md): Design trade-off rationales and 7 ethical AI trust guardrails.
-
-## Product Requirements
-
-Phase 4 establishes the formal, implementation-ready Product Requirements Document (PRD) and acceptance criteria:
-
-* [Product Requirements Document (PRD)](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/04-PRD/prd.md): Comprehensive 20-section specification covering goals, MVP functional requirements (CP, JD, PS, FA, PR, TR), NFRs, AI trust guardrails, edge cases, risks, and decision logs.
-* [Acceptance Criteria Specification](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/04-PRD/acceptance-criteria.md): Formal Gherkin (Given/When/Then) testable criteria for all core workflows (resume parsing, fit decomposition, gap severity classification, snapshot preservation).
-
-## Product Prioritization
-
-Phase 5 establishes a structured, dependency-aware prioritization framework and trade-off analysis:
-
-* [Phase 5 Overview & Directory](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/05-Prioritization/README.md): Methodology summary, scoring formula, and tier definitions.
-* [Prioritization Framework & Principles](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/05-Prioritization/prioritization-framework.md): Dependency-Aware Value-Risk Framework (DAVR), qualitative proxies, and 6 governing principles.
-* [Feature Backlog & MVP Scenarios](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/05-Prioritization/feature-backlog.md): Scored backlog of 22 capabilities, constrained MVP boundaries, and the "3-Thing Extreme MVP" evaluation.
-* [Strategic Trade-off Analysis](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/05-Prioritization/trade-off-analysis.md): Deep dive into 6 critical trade-offs and explicit documentation of what was sacrificed.
-* [Dependency Map & Critical Path](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/05-Prioritization/dependency-map.md): Topological sequencing, hard blockers, soft enhancers, and 4-sprint release path.
-* [Prioritization Decision Log](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/05-Prioritization/prioritization-decision-log.md): 6 interview-defensible decision records with context, rationales, and revisit triggers.
-
-## Product Metrics & Telemetry
-
-Phase 6 establishes a comprehensive measurement architecture, North Star Metric specification, telemetry schema, and experimentation plan:
-
-* [Phase 6 Overview & Directory](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/06-Metrics/README.md): Measurement philosophy, North Star summary, and artifact directory.
-* [Metrics Framework & Hierarchy](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/06-Metrics/metrics-framework.md): 5-level metric hierarchy, 9 functional dimensions, 5 guardrail metrics, and metric anti-patterns.
-* [North Star Metric Specification](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/06-Metrics/north-star-metric.md): Weekly High-Confidence Career Decisions (W-HCCD), operational definitions, input driver decomposition, and limitations.
-* [Metric Definitions Dictionary](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/06-Metrics/metric-definitions.md): Exhaustive metric definitions with mathematical formulas, telemetry sources, and problem traceability.
-* [Event Instrumentation Taxonomy](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/06-Metrics/event-taxonomy.md): Event triggers, properties, sampling strategy, and strict PII privacy boundaries.
-* [Product Funnel & Diagnostics](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/06-Metrics/funnel-analysis.md): 10-stage core conversion funnel, drop-off signals, and diagnostic ratios (OFR, CPR, QAR).
-* [Experimentation Framework](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/06-Metrics/experiment-metrics.md): 4 future A/B testing plans (Qualitative Tiers vs. Scores, Evidence-First UI, Raw Paste vs. URL, Auto-Queue vs. Agency).
-* [Metrics Decision Log](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/06-Metrics/metrics-decision-log.md): 6 interview-defensible telemetry decision records with context, rationales, and revisit triggers.
-
-## Experimentation & Validation
-
-Phase 7 establishes a scientific experimentation and progressive uncertainty reduction framework:
-
-* [Phase 7 Overview & Directory](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/07-Experimentation/README.md): Methodology summary, core experiments, validation stages, and artifact directory.
-* [Experimentation Framework & Philosophy](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/07-Experimentation/experimentation-framework.md): 6-stage uncertainty reduction sequence, dual-track AI validation, and experimentation anti-patterns.
-* [Hypothesis Backlog](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/07-Experimentation/hypothesis-backlog.md): Consolidated backlog of 10 falsifiable hypotheses categorized by risk, uncertainty, validation method, and priority tier (P0/P1/P2).
-* [Experiment Designs & Protocols](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/07-Experimentation/experiment-designs.md): 5 formal experiment specifications (EXP-01 Qualitative Tiers, EXP-02 Evidence Citations, EXP-03 Raw Text Paste, EXP-04 3-Tier Queue, EXP-05 Core Value Benchmark).
-* [Staged Validation Plan](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/07-Experimentation/validation-plan.md): 5-stage progressive validation roadmap (Problem, Prototype, Workflow Benchmark, Cohort Pilot, Controlled A/B Tests) with exit criteria.
-* [Decision Rules & Traceability](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/07-Experimentation/decision-rules.md): Post-experiment decision taxonomy (Positive, Mixed, Neutral, Negative, Kill-Switch) and end-to-end traceability matrix.
-* [Experimentation Decision Log](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/07-Experimentation/experimentation-decision-log.md): 6 research decision records detailing rationales, alternatives, consequences, and revisit triggers.
-
-## Product Roadmap
-
-Phase 8 establishes a dependency-aware, experiment-gated execution roadmap and release strategy:
-
-* [Phase 8 Overview & Directory](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/08-Roadmap/README.md): Methodology summary, PM interview walkthrough, risk management, and master traceability matrix.
-* [Roadmap Strategy & Philosophy](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/08-Roadmap/roadmap-strategy.md): Outcome-oriented roadmap principles, decision loop focus, and anti-fabrication standards.
-* [MVP Release Roadmap (Increments 1–4)](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/08-Roadmap/mvp-release-roadmap.md): 4-increment execution breakdown (Foundation ➔ Intelligence ➔ Decision ➔ Polish) with master roadmap table.
-* [Now / Next / Later Framework](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/08-Roadmap/now-next-later.md): Operational capability horizons (NOW, NEXT, LATER) and permanent non-goals / anti-goals.
-* [Product Dependency Roadmap](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/08-Roadmap/dependency-roadmap.md): Critical path dependency graph and capability prerequisite matrix (Hard, Soft, and Validation dependencies).
-* [Product Release Plan](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/08-Roadmap/release-plan.md): Staged rollout specifications (Release 0 through Release 3) with validation exit gates and rollback conditions.
-* [Post-MVP Product Roadmap](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/08-Roadmap/post-mvp-roadmap.md): Long-term capability themes (Reliability, Portfolio Intelligence, Workflow Depth, Market Radar).
-* [Roadmap Decision Log](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/08-Roadmap/roadmap-decision-log.md): 7 interview-defensible strategic roadmap decisions (RD-01 to RD-07) detailing trade-offs and revisit triggers.
-
-## Business & Commercial Strategy
-
-Phase 9 establishes an analytical business model, unit economics sensitivity framework, and go-to-market distribution strategy:
-
-* [Phase 9 Overview & Directory](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/09-Business/README.md): Commercial methodology summary, business flywheel diagrams, and core viability conditions.
-* [Value Proposition Strategy](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/09-Business/value-proposition.md): Value Proposition Canvas, customer jobs/pains/gains, and core differentiation vs. status-quo tools.
-* [Customer Segmentation & Beachhead](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/09-Business/customer-segmentation.md): 5-segment evaluation matrix and technical early-career beachhead selection rationale.
-* [Competitive Landscape & Positioning](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/09-Business/competitive-positioning.md): Categorical competitor analysis, comparison matrix, and core positioning statement.
-* [Business Model Strategy](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/09-Business/business-model.md): Evaluation of 5 candidate business models and recommended phased Freemium B2C / University B2B strategy.
-* [Monetization Strategy & Tier Architecture](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/09-Business/monetization-strategy.md): Free vs. Premium tier boundaries, natural upgrade triggers, and pricing elasticity experiments.
-* [Go-to-Market (GTM) Strategy](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/09-Business/go-to-market-strategy.md): 3-phase GTM roadmap (Campus Community ➔ Content/Referral ➔ University Partnerships) and channel evaluation.
-* [Unit Economics & Financial Assumptions](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/09-Business/unit-economics-assumptions.md): SaaS financial model, AI inference COGS breakdown, and 3-scenario sensitivity analysis.
-* [Business Metrics & Telemetry](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/09-Business/business-metrics.md): Commercial metric hierarchy, unit economics KPIs, and margin guardrail thresholds.
-* [Business Risk Management](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/09-Business/business-risks.md): 8 core business risks (BR-01 to BR-08) with early warning signals, mitigations, and contingency plans.
-* [Business Decision Log](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/09-Business/business-decision-log.md): 7 interview-defensible commercial decision records (BD-01 to BD-07) detailing trade-offs and revisit triggers.
-
----
-
-## Product Management Case Study Structure
-
-This repository is organized into modular product case study artifacts:
-
-| Section | Directory | Purpose & Key Artifacts |
+| Decision | Why (Strategic Rationale) | Trade-Off / What Was Sacrificed |
 | :--- | :--- | :--- |
-| **01** | [`01-Problem-Discovery/`](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/01-Problem-Discovery) | Problem framing, user journey breakdown, pain point validation framework. |
-| **02** | [`02-Product-Strategy/`](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/02-Product-Strategy) | Strategic positioning, competitive landscape, value proposition differentiation. |
-| **03** | [`03-User-Experience/`](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/03-User-Experience) | Core UX workflows, decision loops, wireframe specifications. |
-| **04** | [`04-PRD/`](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/04-PRD) | Complete Product Requirements Document (features, acceptance criteria, AI requirements). |
-| **05** | [`05-Prioritization/`](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/05-Prioritization) | Framework-driven backlog evaluation and trade-off rationales. |
-| **06** | [`06-Metrics/`](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/06-Metrics) | North Star metric, input/output metric trees, guardrails, and instrumentation schema. |
-| **07** | [`07-Experimentation/`](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/07-Experimentation) | Hypothesis formulation, A/B testing plans, rollout strategies. |
-| **08** | [`08-Roadmap/`](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/08-Roadmap) | Phased product roadmap (Now / Next / Later) and capability progression. |
-| **09** | [`09-Business/`](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/09-Business) | Unit economics, monetization hypotheses, business risk analysis. |
-| **Assets** | [`assets/`](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/assets) | Diagrams, charts, and conceptual visual artifacts. |
+| **Qualitative Fit Tiers over Single Numerical Scores** | Numerical scores (e.g., "73%") create false precision and keyword anxiety. 5 qualitative tiers (*Strong*, *Reasonable*, *Stretch*, *Low*, *Insufficient Info*) drive calibrated decision confidence. | Sacrificed instant numerical ranking simplicity for cognitive nuance. |
+| **Quote-Citations over Black-Box Advice** | Every match must cite an exact line item from the verified profile. Grounding builds trust and prevents hallucinated qualifications. | Sacrificed conversational chatbot fluency for structured tabular explainability. |
+| **Raw JD Text Paste over Fragile Web Scraping** | Job board anti-bot protections and login walls cause $>30\%$ scraping failure. Raw text paste ensures 100% operational reliability on day one. | Sacrificed 1-click URL convenience for 100% ingestion reliability. |
+| **Candidate Agency over Auto-Apply Bots** | Mass auto-apply bots flood recruiters with low-intent spam, trigger candidate blacklists, and erode candidate preparation. | Sacrificed viral vanity metrics (application volume) for high-intent conversion quality. |
+| **Immutable Local JD Snapshots** | Job postings return 404 errors once closed. Preserving local text snapshots ensures candidates retain interview preparation context. | Sacrificed minimal database footprint for persistent local archival storage. |
+| **4-Level Gap Severity Classification** | Distinguishing *Blocking* gaps from *Learnable on Job* tools prevents candidates from irrationally self-rejecting over secondary libraries. | Sacrificed simple binary keyword matching for multi-dimensional reasoning. |
+| **Candidate-First Business Model** | Monetizing on employer recruiter fees creates a fundamental conflict of interest where algorithms push candidates to paying employers. | Sacrificed lucrative corporate recruiter budgets to preserve uncompromised candidate trust. |
+
+---
+
+## MVP Scope (5 Core Modules)
+
+The approved MVP consists of 18 capabilities organized across 5 core functional modules:
+
+1. **Candidate Profile Module:** Parses resume PDFs and provides an interactive project editor to establish a verified baseline of candidate evidence.
+2. **Job Ingestion & Structuring Module:** Accepts raw JD text paste with zero scraper failure and classifies requirements into a 4-category taxonomy (*Hard Prerequisite*, *Core Competency*, *Preferred Tool*, *Domain Context*).
+3. **Job-Fit Analysis Engine:** Maps demonstrated strengths with quote citations, identifies transferable skill overlaps, classifies gaps across 4 severity tiers, and assigns one of 5 qualitative fit tiers.
+4. **Opportunity Prioritization Module:** Organizes evaluated postings into an automated 3-tier queue (*Apply Now*, *Targeted Upskill*, *Archive*) with frictionless candidate manual override.
+5. **Application Tracking & Archive Module:** Preserves an immutable local text snapshot of every analyzed job and organizes active opportunities across a lightweight Kanban pipeline.
+
+---
+
+## AI Trust & Safety Guardrails
+
+AI Career Copilot operates under strict ethical and technical AI safety guardrails:
+
+* **No Experience Invention:** The system never fabricates, embellishes, or assumes unstated candidate skills or achievements.
+* **Deterministic Evidence Grounding:** Recommendations require verifiable quote citations linking candidate facts directly to JD requirements.
+* **Explicit Uncertainty Flagging:** Postings with missing salary, vague responsibilities, or unstated requirements are flagged as *Insufficient Information* rather than guessed.
+* **Separation of Fact vs. Inference:** Clear visual distinction between raw employer requirements, candidate facts, and AI-derived reasoning.
+* **Candidate-in-the-Loop Agency:** Full manual override on all fit tiers, gap severity tags, and queue classifications with zero algorithmic resistance.
+* **Safety Launch Gate:** An **Unsupported Evidence (Hallucination) Rate strictly $<1.0\%$** is an absolute launch prerequisite for all AI models.
+
+---
+
+## Metrics & Validation Framework
+
+The product measurement framework connects user problem resolution directly to operational telemetry:
+
+```
+┌─────────────────────────────────────────────────────────────────────────────────────────────┐
+│   NORTH STAR METRIC: Weekly High-Confidence Career Decisions (W-HCCD)                        │
+│   (Count of deliberate triage actions following ≥15s qualified review with ≥4/5 confidence)  │
+└─────────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+* **Core Metric Hierarchy:**
+  * *Product Value:* Fit Analysis Completion Rate ($\ge 80\%$), Evidence Inspection Rate ($\ge 60\%$).
+  * *Candidate Agency:* Fit Manual Override Rate ($10\text{--}30\%$ healthy band).
+  * *Workflow Retention:* 7-Day Triage Return Rate ($\ge 35\%$), Snapshot Reference Frequency.
+  * *Ingestion Reliability:* Raw Text Ingestion Success Rate ($>98\%$).
+* **Falsifiable Experiments Designed (Phase 7):**
+  * `EXP-01`: 5 Qualitative Fit Tiers vs. Single Numerical Match Score.
+  * `EXP-02`: Evidence-First Presentation vs. Recommendation-First UI.
+  * `EXP-03`: Raw JD Text Paste vs. Direct URL Ingestion Reliability.
+  * `EXP-04`: 3-Tier Opportunity Queue vs. Manual Candidate Sorting.
+  * `EXP-05`: End-to-End Workflow Benchmark vs. Status-Quo Spreadsheets & Generic Chatbots.
+
+> *Governance Note: All metric targets, conversion rates, and experiment outcomes represent analytical validation hypotheses and design targets `[DESIGN TARGET]`, not reported production results.*
+
+---
+
+## Product Roadmap & Release Horizon
+
+The product roadmap follows a dependency-aware, outcome-driven sequence:
+
+```
+┌─────────────────────────────────────────────────────────────────────────────────────────────┐
+│   NOW (MVP Increments 1–4)                                                                  │
+│   • Candidate Profile & Raw JD Normalization • Grounded Fit Engine with 5 Qualitative Tiers │
+│   • 3-Tier Opportunity Queue & Snapshot Archive • Kanban Tracker & Interview Prep Drawer    │
+├─────────────────────────────────────────────────────────────────────────────────────────────┤
+│   NEXT (Post-MVP Fast Follows)                                                              │
+│   • Browser Extension Capture Companion • STAR-Method Interview Talking Point Frameworks    │
+│   • Multi-Track Profile Linking (e.g. Data Analyst vs. SWE) • Stagnation Nudge Alerts       │
+├─────────────────────────────────────────────────────────────────────────────────────────────┤
+│   LATER (Expansion Horizon)                                                                 │
+│   • Deep GitHub Repository & Code Artifact Parsing • Market Skill Demand Drift Radar        │
+├─────────────────────────────────────────────────────────────────────────────────────────────┤
+│   NOT PLANNED (Strict Anti-Goals)                                                           │
+│   ❌ Automated Mass Auto-Apply Bots • ❌ Hallucinated Resume Writers • ❌ Recruiter Spam     │
+└─────────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Business Model & Commercial Strategy
+
+* **Initial Model Hypothesis:** **Freemium B2C Subscription** (`[HYPOTHESIS]`), with a Phase 2 expansion into **University Career Center Institutional Licensing (B2B SaaS)**.
+* **Tier Architecture:**
+  * *Free Tier ($0):* Complete honest fit evaluation (5 JDs/week, 15 stored snapshots, 4-category taxonomy, 5 qualitative tiers, gap severity classification). Core decision honesty is never paywalled.
+  * *Premium Tier ($15/mo `[PLANNING ASSUMPTION]`):* Unlimited snapshot storage, STAR interview answer generator, deep GitHub code parsing, multi-track search profiles.
+* **Unit Economics Benchmark:** Baseline Gross Margin $\sim 82\text{--}87\%$ after LLM inference costs ($\sim \$1.85/\text{paid user}/\text{month}$); Base Case $LTV:CAC \sim 6.15\times$ with payback period $< 1 \text{ month}$ `[PLANNING ASSUMPTION]`.
+* **GTM Strategy:** Founder-led campus workshops & student Discord/club hubs (Phase 1) ➔ Public JD breakdown teardown content & peer referral passes (Phase 2) ➔ University career services enterprise licensing (Phase 3).
+
+---
+
+## Recommended Visual Artifacts
+
+The following visual design artifacts are specified in the case study for future standalone asset production:
+
+1. **End-to-End Decision Architecture Diagram:** Full visual mapping of the 6-stage candidate workflow from resume parsing to interview retrieval.
+2. **Job-Fit Analysis Interactive UI Spec:** High-fidelity mockup of the 5 qualitative tiers, side-by-side quote citation drawer, and 4-level gap severity tags (specified in [`03-User-Experience/wireframe-specification.md`](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/03-User-Experience/wireframe-specification.md)).
+3. **Kanban Pipeline & Immutable Snapshot View:** UI mockup showing preserved raw JD text and interview preparation context drawer.
+4. **Value Proposition Canvas & Strategic Positioning Map:** Visual chart plotting AI Career Copilot against job boards, ATS scanners, and generic LLMs.
+
+---
+
+## Case Study Deep Dive (Full 9-Phase Index)
+
+Explore the complete modular documentation across all nine Product Management phases:
+
+| Phase | Focus Area | Key Artifacts & Description | Documentation Link |
+| :---: | :--- | :--- | :---: |
+| **01** | **Problem Discovery** | Problem Statement, Pain Point Matrix, User Personas, JTBD Framework, Root Cause Tree, Opportunity Areas. | [01-Problem-Discovery/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/01-Problem-Discovery) |
+| **02** | **Product Strategy** | Product Vision, Target ICP, Value Proposition, Positioning Map, Product Principles, Strategic Trade-offs. | [02-Product-Strategy/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/02-Product-Strategy) |
+| **03** | **User Experience** | End-to-End User Flow, 90-Second Decision Loop, Fit Analysis UX, Kanban Tracker, Wireframe Specs, AI Safety. | [03-User-Experience/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/03-User-Experience) |
+| **04** | **PRD & Requirements** | 20-Section Implementation-Ready PRD, Functional Requirements, NFRs, Formal Gherkin Acceptance Criteria. | [04-PRD/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/04-PRD) |
+| **05** | **Product Prioritization** | DAVR Framework, Scored 22-Feature Backlog, 6 Strategic Trade-offs, Dependency Critical Path, Decision Log. | [05-Prioritization/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/05-Prioritization) |
+| **06** | **Metrics & Telemetry** | North Star Metric (W-HCCD), 5-Level Hierarchy, Event Instrumentation Taxonomy, Funnel Diagnostics. | [06-Metrics/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/06-Metrics) |
+| **07** | **Experimentation** | Hypothesis Backlog, 5 Formal Experiment Designs (EXP-01 to EXP-05), Staged Validation Roadmap, Decision Rules. | [07-Experimentation/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/07-Experimentation) |
+| **08** | **Product Roadmap** | 4-Increment MVP Roadmap, Now/Next/Later Matrix, Technical Dependency Graph, Staged Release Plan. | [08-Roadmap/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/08-Roadmap) |
+| **09** | **Business Strategy** | Value Prop Canvas, Segmentation Matrix, Freemium/B2B Model, GTM Roadmap, Unit Economics, Risk Registry. | [09-Business/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/09-Business) |
+
+---
+
+## What This Case Study Demonstrates
+
+This portfolio project provides tangible, interview-defensible proof of core Product Management competencies:
+
+* **Rigorous Problem Framing:** Grounding product concepts in root-cause analysis, JTBD progress statements, and acute user pain rather than technology for its own sake.
+* **Strategic Trade-Off Judgment:** Defending hard architectural decisions (e.g., rejecting single match scores, raw paste before scraping, candidate agency over spam bots).
+* **Technical & AI Product Sense:** Designing deterministic quote-grounding systems, explicit ambiguity handling, and statistical safety launch gates ($<1.0\%$ hallucination).
+* **Structured Execution Scoping:** Utilizing dependency-aware prioritization (DAVR framework) to scope a credible, phased 4-increment MVP.
+* **Outcome-Oriented Measurement:** Defining behavior-driven North Star metrics (W-HCCD) and designing controlled, falsifiable experimentation protocols.
+* **Commercial & Business Acumen:** Modeling SaaS unit economics, LLM inference COGS sensitivity, freemium tier boundaries, and organic community-led GTM strategies.
 
 ---
 
 ## Project Status
 
-| Phase | Focus Area | Status | Key Artifacts |
-| :---: | :--- | :---: | :--- |
-| **Phase 1** | **Problem Discovery** | **Complete** | [01-Problem-Discovery/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/01-Problem-Discovery) (Problem Statement, Pain Points, Personas, JTBD, Root Cause Analysis) |
-| **Phase 2** | **Product Strategy** | **Complete** | [02-Product-Strategy/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/02-Product-Strategy) (Product Vision, Target ICP, Value Prop, Positioning, Principles, Trade-offs) |
-| **Phase 3** | **User Experience** | **Complete** | [03-User-Experience/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/03-User-Experience) (User Flows, Decision Loops, Fit Analysis UX, Tracking Kanban, Wireframes) |
-| **Phase 4** | **PRD & Requirements** | **Complete** | [04-PRD/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/04-PRD) (20-Section PRD Specification, Functional Requirements, Acceptance Criteria) |
-| **Phase 5** | **Product Prioritization** | **Complete** | [05-Prioritization/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/05-Prioritization) (DAVR Framework, Scored Backlog, 6 Trade-offs, Dependency Map, Decision Log) |
-| **Phase 6** | **Metrics & Telemetry** | **Complete** | [06-Metrics/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/06-Metrics) (North Star Metric W-HCCD, Metric Hierarchy, Event Taxonomy, Funnel Diagnostics) |
-| **Phase 7** | **Experimentation** | **Complete** | [07-Experimentation/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/07-Experimentation) (Hypothesis Backlog, 5 Experiment Designs, Validation Roadmap, Decision Rules) |
-| **Phase 8** | **Product Roadmap** | **Complete** | [08-Roadmap/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/08-Roadmap) (Roadmap Strategy, MVP Increments, Now/Next/Later, Dependencies, Release Plan) |
-| **Phase 9** | **Business Model & Strategy** | **Complete** | [09-Business/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/09-Business) (Value Prop, Segmentation, Business Model, Pricing, GTM, Unit Economics) |
+```
+┌─────────────────────────────────────────────────────────────────────────────────────────────┐
+│   PROJECT STATUS: Phase 9 Complete — Final Portfolio Case Study                             │
+│   All 9 core Product Management phases are fully authored, cross-linked, and validated.     │
+└─────────────────────────────────────────────────────────────────────────────────────────────┘
+```
 
-> **Current Milestone:** Phase 9 Complete — Ready for Final Portfolio / Case Study Packaging
+---
 
-*Note: This repository contains an analytical product strategy and design case study. It does not assert pre-existing commercial adoption, unvalidated revenue figures, or synthetic user validation metrics.*
+## Anti-Fabrication & Analytical Governance Notice
+
+In strict compliance with Product Management portfolio governance:
+* This case study represents an **analytical product design, strategy, and specification framework**.
+* It does **not** assert pre-existing commercial adoption, synthetic user research statistics, fabricated A/B test outcomes, unverified revenue numbers, or active production deployment.
+* All future research requirements, unit economics assumptions, and experimental metrics are explicitly tagged:
+  * `[FACT]` — Verifiable industry truth or desk research finding.
+  * `[ASSUMPTION]` — Working assumption requiring operational testing.
+  * `[HYPOTHESIS]` — Falsifiable proposition subject to experimentation.
+  * `[PRODUCT INFERENCE]` — Strategic product deduction derived from workflow analysis.
+  * `[DESIGN TARGET]` — Operational standard or quality threshold.
+  * `[PLANNING ASSUMPTION]` — Financial and unit economics sensitivity modeling parameter.
