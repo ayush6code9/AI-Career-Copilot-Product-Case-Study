@@ -107,6 +107,13 @@ Phase 3 translates strategic value pillars into concrete, evidence-backed user f
 * [Wireframe Specifications](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/03-User-Experience/wireframe-specification.md): Low-fidelity structural specifications for 8 core application screens.
 * [UX Decisions & AI Safety](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/03-User-Experience/ux-decisions-and-safety.md): Design trade-off rationales and 7 ethical AI trust guardrails.
 
+## Product Requirements
+
+Phase 4 establishes the formal, implementation-ready Product Requirements Document (PRD) and acceptance criteria:
+
+* [Product Requirements Document (PRD)](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/04-PRD/prd.md): Comprehensive 20-section specification covering goals, MVP functional requirements (CP, JD, PS, FA, PR, TR), NFRs, AI trust guardrails, edge cases, risks, and decision logs.
+* [Acceptance Criteria Specification](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/04-PRD/acceptance-criteria.md): Formal Gherkin (Given/When/Then) testable criteria for all core workflows (resume parsing, fit decomposition, gap severity classification, snapshot preservation).
+
 ---
 
 ## Product Management Case Study Structure
@@ -130,7 +137,7 @@ This repository is organized into modular product case study artifacts:
 
 ## Project Status
 
-> **Status:** Phase 3 Complete (User Experience & Product Flows)  
-> **Current Milestone:** User flows, decision loops, explainable fit UI, tracking snapshots, and wireframes locked. Ready for Phase 4 (PRD).
+> **Status:** Phase 4 Complete (Product Requirements Document - PRD)  
+> **Current Milestone:** Complete PRD specification, functional requirements, Gherkin acceptance criteria, AI guardrails, and decision logs locked. Ready for Phase 5 (Product Prioritization).
 
 *Note: This repository contains an analytical product strategy and design case study. It does not assert pre-existing commercial adoption, unvalidated revenue figures, or synthetic user validation metrics.*
