@@ -94,6 +94,19 @@ Phase 2 translates problem-discovery findings into an integrated product and mar
 * [Strategic Constraints & Mitigations](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/02-Product-Strategy/strategic-constraints.md): Operational, privacy, and LLM uncertainty constraints with a 6-tier qualification taxonomy.
 * [Strategic Trade-offs](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/02-Product-Strategy/strategic-trade-offs.md): Critical architectural and scope trade-offs (Breadth vs. Depth, Automation vs. Agency, Score vs. Explainability).
 
+## User Experience
+
+Phase 3 translates strategic value pillars into concrete, evidence-backed user flows, interaction models, and screen specifications:
+
+* [End-to-End User Flow](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/03-User-Experience/user-flow.md): Step-by-step lifecycle from onboarding to pipeline tracking, critical moments, and trust barriers.
+* [Core User Workflow](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/03-User-Experience/core-user-workflow.md): 9-step decision loop fulfilling the primary JTBD in <90 seconds.
+* [Job-Fit Analysis UX](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/03-User-Experience/job-fit-analysis-ux.md): Explainability specification, qualitative fit tiers, evidence citations, and gap severity tiers.
+* [Application Tracking UX](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/03-User-Experience/application-tracking-ux.md): 9-state pipeline lifecycle, immutable local snapshot schema, and interview context retrieval.
+* [User Stories (MoSCoW)](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/03-User-Experience/user-stories.md): Prioritized MVP stories across Candidate Profile, Discovery, Fit Analysis, Prioritization, and Tracking.
+* [UX Principles](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/03-User-Experience/ux-principles.md): 6 interaction principles (Explain before recommending, Ground in evidence, Zero hidden uncertainty).
+* [Wireframe Specifications](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/03-User-Experience/wireframe-specification.md): Low-fidelity structural specifications for 8 core application screens.
+* [UX Decisions & AI Safety](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/03-User-Experience/ux-decisions-and-safety.md): Design trade-off rationales and 7 ethical AI trust guardrails.
+
 ---
 
 ## Product Management Case Study Structure
@@ -117,7 +130,7 @@ This repository is organized into modular product case study artifacts:
 
 ## Project Status
 
-> **Status:** Phase 2 Complete (Product Strategy)  
-> **Current Milestone:** Strategy, positioning, value pillars, principles, constraints, and trade-offs locked. Ready for Phase 3 (User Experience).
+> **Status:** Phase 3 Complete (User Experience & Product Flows)  
+> **Current Milestone:** User flows, decision loops, explainable fit UI, tracking snapshots, and wireframes locked. Ready for Phase 4 (PRD).
 
 *Note: This repository contains an analytical product strategy and design case study. It does not assert pre-existing commercial adoption, unvalidated revenue figures, or synthetic user validation metrics.*
