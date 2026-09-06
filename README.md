@@ -161,7 +161,18 @@ This repository is organized into modular product case study artifacts:
 
 ## Project Status
 
-> **Status:** Phase 6 Complete (Product Metrics & Telemetry)  
-> **Current Milestone:** North Star Metric (W-HCCD), 5-level metric hierarchy, telemetry event taxonomy, funnel diagnostics, and experimentation plans locked. Ready for Phase 7 (Experimentation & Validation).
+| Phase | Focus Area | Status | Key Artifacts |
+| :---: | :--- | :---: | :--- |
+| **Phase 1** | **Problem Discovery** | **Complete** | [01-Problem-Discovery/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/01-Problem-Discovery) (Problem Statement, Pain Points, Personas, JTBD, Root Cause Analysis) |
+| **Phase 2** | **Product Strategy** | **Complete** | [02-Product-Strategy/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/02-Product-Strategy) (Product Vision, Target ICP, Value Prop, Positioning, Principles, Trade-offs) |
+| **Phase 3** | **User Experience** | **Complete** | [03-User-Experience/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/03-User-Experience) (User Flows, Decision Loops, Fit Analysis UX, Tracking Kanban, Wireframes) |
+| **Phase 4** | **PRD & Requirements** | **Complete** | [04-PRD/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/04-PRD) (20-Section PRD Specification, Functional Requirements, Acceptance Criteria) |
+| **Phase 5** | **Product Prioritization** | **Complete** | [05-Prioritization/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/05-Prioritization) (DAVR Framework, Scored Backlog, 6 Trade-offs, Dependency Map, Decision Log) |
+| **Phase 6** | **Metrics & Telemetry** | **Complete** | [06-Metrics/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/06-Metrics) (North Star Metric W-HCCD, Metric Hierarchy, Event Taxonomy, Funnel Diagnostics) |
+| **Phase 7** | **Experimentation** | *Pending* | Experimentation Design & Validation Plans |
+| **Phase 8** | **Product Roadmap** | *Pending* | Phased Capability Progression (Now / Next / Later) |
+| **Phase 9** | **Business Model & Unit Economics** | *Pending* | Monetization Hypotheses, Unit Economics & Business Risks |
+
+> **Current Milestone:** Phase 6 Complete — Ready for Phase 7 (Experimentation)
 
 *Note: This repository contains an analytical product strategy and design case study. It does not assert pre-existing commercial adoption, unvalidated revenue figures, or synthetic user validation metrics.*
