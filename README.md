@@ -81,6 +81,19 @@ Phase 1 establishes the empirical and analytical foundation of the user problem 
 * [Opportunity Areas](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/01-Problem-Discovery/opportunity-areas.md): Strategic value vectors and validation priorities.
 * [Problem Prioritization](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/01-Problem-Discovery/problem-prioritization.md): Qualitative evaluation, scope boundaries, and explicit non-goals.
 
+## Product Strategy
+
+Phase 2 translates problem-discovery findings into an integrated product and market strategy:
+
+* [Product Vision & Mission](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/02-Product-Strategy/product-vision.md): 3-horizon evolution, intended user/business outcomes, and core vision rationale.
+* [Target Segment & ICP](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/02-Product-Strategy/target-segment.md): 7-dimensional segmentation, Ideal Customer Profile, and explicit out-of-scope boundaries.
+* [Value Proposition](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/02-Product-Strategy/value-proposition.md): Value proposition statement and 3 core pillars (Explainability, Priority Intelligence, Integrated Pipeline).
+* [Product Positioning](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/02-Product-Strategy/positioning.md): Competitive landscape analysis vs. job boards, generic LLMs, and auto-apply spam tools.
+* [Product Principles](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/02-Product-Strategy/product-principles.md): 6 decision-making principles (Explainability over black-box, User agency, Calibrated uncertainty).
+* [Product Goals & Outcomes](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/02-Product-Strategy/product-goals.md): Strategic North Star direction, User/Product/Business qualitative goal hierarchies, and Non-Goals.
+* [Strategic Constraints & Mitigations](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/02-Product-Strategy/strategic-constraints.md): Operational, privacy, and LLM uncertainty constraints with a 6-tier qualification taxonomy.
+* [Strategic Trade-offs](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/02-Product-Strategy/strategic-trade-offs.md): Critical architectural and scope trade-offs (Breadth vs. Depth, Automation vs. Agency, Score vs. Explainability).
+
 ---
 
 ## Product Management Case Study Structure
@@ -104,7 +117,7 @@ This repository is organized into modular product case study artifacts:
 
 ## Project Status
 
-> **Status:** Phase 1 Complete (Problem Discovery)  
-> **Current Milestone:** Problem framing, user pain points, root causes, JTBDs, and scope boundaries established. Ready for Phase 2 (Product Strategy).
+> **Status:** Phase 2 Complete (Product Strategy)  
+> **Current Milestone:** Strategy, positioning, value pillars, principles, constraints, and trade-offs locked. Ready for Phase 3 (User Experience).
 
 *Note: This repository contains an analytical product strategy and design case study. It does not assert pre-existing commercial adoption, unvalidated revenue figures, or synthetic user validation metrics.*
