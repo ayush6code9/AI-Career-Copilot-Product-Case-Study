@@ -1,6 +1,6 @@
 # AI Career Copilot
 
-## AI Career Decision-Support Product
+## AI Career Decision-Support Workspace
 
 **AI Career Copilot** is an evidence-grounded career decision-support system designed to help college graduates and early-career job seekers navigate qualification ambiguity, evaluate job-fit transparently, and focus their limited application bandwidth on high-conviction opportunities.
 
@@ -22,10 +22,10 @@ Rather than automating low-intent mass-application spam or outputting arbitrary 
 
 Early-career job seekers—specifically final-year STEM/business students and recent graduates—face severe decision friction when navigating entry-level job markets:
 
-* **Job-Description Ambiguity:** Postings are bloated with unrealistic "wish lists" of 10+ tools and vague experience requirements, making it impossible to distinguish hard prerequisites from learnable tools.
-* **Self-Assessment Anxiety & Blindspots:** Candidates suffer from imposter syndrome and qualification self-doubt, leading either to irrational self-rejection or unfocused "spray-and-pray" mass applying.
+* **Job-Description Ambiguity:** Postings are bloated with unrealistic "wish lists" of 10+ tools and vague experience requirements, making it difficult to distinguish hard prerequisites from learnable tools.
+* **Self-Assessment Anxiety & Blindspots:** Candidates experience qualification self-doubt and imposter syndrome, leading either to irrational self-rejection or unfocused "spray-and-pray" mass applying.
 * **False Precision of Match Scores:** Existing tools output opaque, single-number percentage scores (e.g., "78% Match") without explaining *why* or what evidence was used.
-* **Context Fragmentation & Broken Links:** Job postings frequently expire (404) once applications close, leaving candidates without their original analysis or preparation talking points during interview calls.
+* **Context Fragmentation & Broken Links:** Job postings frequently expire once applications close, leaving candidates without their original analysis or preparation talking points during interview calls.
 * **Candidate Agency Erosion:** Opaque algorithms and auto-apply bots remove the candidate from the driver's seat, generating low-intent application volume that degrades recruiter trust.
 
 ---
@@ -40,7 +40,7 @@ The product operates across a closed, 6-stage decision loop:
 DISCOVER  ──▶  UNDERSTAND  ──▶  EVALUATE  ──▶  PRIORITIZE  ──▶  ACT  ──▶  TRACK
 ```
 
-1. **Discover:** Candidate brings job postings from any job board or source.
+1. **Discover:** Candidate brings job postings from any job board or company portal.
 2. **Understand:** System structures the raw JD into a 4-category requirement taxonomy.
 3. **Evaluate:** Multi-dimensional fit engine generates quote-grounded matches and gap severity ratings.
 4. **Prioritize:** Automated 3-tier queue triages roles into *Apply Now*, *Targeted Upskill*, or *Archive*.
@@ -55,7 +55,7 @@ DISCOVER  ──▶  UNDERSTAND  ──▶  EVALUATE  ──▶  PRIORITIZE  ─
 * **Profile:** Final-year undergraduate/graduate students and recent graduates (0–2 years experience) in technical and analytical disciplines.
 * **Target Disciplines:** Computer Science, Data Science, Information Systems, Business Analytics, Industrial Engineering, Statistics.
 * **Target Roles:** Data Analyst, Business Analyst, Product Analyst, Entry-Level Data Engineer, Associate Software/ML Engineer.
-* **Core Pain:** Transitioning academic projects, coursework, and internships into commercial job requirements under tight graduation deadlines.
+* **Core Need:** Translating academic projects, coursework, and internships into commercial job requirements under tight hiring deadlines.
 
 ---
 
@@ -83,18 +83,18 @@ The following strategic trade-offs define the architecture and product principle
 | Decision | Why (Strategic Rationale) | Trade-Off / What Was Sacrificed |
 | :--- | :--- | :--- |
 | **Qualitative Fit Tiers over Single Numerical Scores** | Numerical scores (e.g., "73%") create false precision and keyword anxiety. 5 qualitative tiers (*Strong*, *Reasonable*, *Stretch*, *Low*, *Insufficient Info*) drive calibrated decision confidence. | Sacrificed instant numerical ranking simplicity for cognitive nuance. |
-| **Quote-Citations over Black-Box Advice** | Every match must cite an exact line item from the verified profile. Grounding builds trust and prevents hallucinated qualifications. | Sacrificed conversational chatbot fluency for structured tabular explainability. |
-| **Raw JD Text Paste over Fragile Web Scraping** | Job board anti-bot protections and login walls cause $>30\%$ scraping failure. Raw text paste ensures 100% operational reliability on day one. | Sacrificed 1-click URL convenience for 100% ingestion reliability. |
-| **Candidate Agency over Auto-Apply Bots** | Mass auto-apply bots flood recruiters with low-intent spam, trigger candidate blacklists, and erode candidate preparation. | Sacrificed viral vanity metrics (application volume) for high-intent conversion quality. |
+| **Quote-Citations over Black-Box Advice** | Every match cites an exact line item from the verified profile. Grounding builds trust and eliminates hallucinated qualifications. | Sacrificed conversational chatbot fluency for structured tabular explainability. |
+| **Raw JD Text Paste over Fragile Web Scraping** | Job board anti-bot protections and login walls cause frequent scraping failures. Raw text paste ensures 100% operational reliability. | Sacrificed 1-click URL convenience for 100% ingestion reliability. |
+| **Candidate Agency over Auto-Apply Bots** | Mass auto-apply bots flood recruiters with low-intent spam, trigger candidate blacklists, and erode candidate interview preparation. | Sacrificed viral vanity metrics (application volume) for high-intent conversion quality. |
 | **Immutable Local JD Snapshots** | Job postings return 404 errors once closed. Preserving local text snapshots ensures candidates retain interview preparation context. | Sacrificed minimal database footprint for persistent local archival storage. |
 | **4-Level Gap Severity Classification** | Distinguishing *Blocking* gaps from *Learnable on Job* tools prevents candidates from irrationally self-rejecting over secondary libraries. | Sacrificed simple binary keyword matching for multi-dimensional reasoning. |
-| **Candidate-First Business Model** | Monetizing on employer recruiter fees creates a fundamental conflict of interest where algorithms push candidates to paying employers. | Sacrificed lucrative corporate recruiter budgets to preserve uncompromised candidate trust. |
+| **Candidate-First Business Model** | Monetizing on employer recruiter fees creates a fundamental conflict of interest where algorithms push candidates to paying employers. | Sacrificed corporate recruiter budgets to preserve uncompromised candidate trust. |
 
 ---
 
 ## MVP Scope (5 Core Modules)
 
-The approved MVP consists of 18 capabilities organized across 5 core functional modules:
+The product scope consists of 18 capabilities organized across 5 core functional modules:
 
 1. **Candidate Profile Module:** Parses resume PDFs and provides an interactive project editor to establish a verified baseline of candidate evidence.
 2. **Job Ingestion & Structuring Module:** Accepts raw JD text paste with zero scraper failure and classifies requirements into a 4-category taxonomy (*Hard Prerequisite*, *Core Competency*, *Preferred Tool*, *Domain Context*).
@@ -110,10 +110,10 @@ AI Career Copilot operates under strict ethical and technical AI safety guardrai
 
 * **No Experience Invention:** The system never fabricates, embellishes, or assumes unstated candidate skills or achievements.
 * **Deterministic Evidence Grounding:** Recommendations require verifiable quote citations linking candidate facts directly to JD requirements.
-* **Explicit Uncertainty Flagging:** Postings with missing salary, vague responsibilities, or unstated requirements are flagged as *Insufficient Information* rather than guessed.
+* **Explicit Uncertainty Flagging:** Postings with missing compensation, vague responsibilities, or unstated requirements are flagged as *Insufficient Information* rather than guessed.
 * **Separation of Fact vs. Inference:** Clear visual distinction between raw employer requirements, candidate facts, and AI-derived reasoning.
 * **Candidate-in-the-Loop Agency:** Full manual override on all fit tiers, gap severity tags, and queue classifications with zero algorithmic resistance.
-* **Safety Launch Gate:** An **Unsupported Evidence (Hallucination) Rate strictly $<1.0\%$** is an absolute launch prerequisite for all AI models.
+* **Safety Launch Gate:** An Unsupported Evidence (Hallucination) Rate strictly $<1.0\%$ is an absolute launch prerequisite for all AI models.
 
 ---
 
@@ -139,8 +139,6 @@ The product measurement framework connects user problem resolution directly to o
   * `EXP-03`: Raw JD Text Paste vs. Direct URL Ingestion Reliability.
   * `EXP-04`: 3-Tier Opportunity Queue vs. Manual Candidate Sorting.
   * `EXP-05`: End-to-End Workflow Benchmark vs. Status-Quo Spreadsheets & Generic Chatbots.
-
-> *Governance Note: All metric targets, conversion rates, and experiment outcomes represent analytical validation hypotheses and design targets `[DESIGN TARGET]`, not reported production results.*
 
 ---
 
@@ -170,23 +168,12 @@ The product roadmap follows a dependency-aware, outcome-driven sequence:
 
 ## Business Model & Commercial Strategy
 
-* **Initial Model Hypothesis:** **Freemium B2C Subscription** (`[HYPOTHESIS]`), with a Phase 2 expansion into **University Career Center Institutional Licensing (B2B SaaS)**.
+* **Initial Model:** **Freemium B2C Subscription**, with a Phase 2 expansion into **University Career Center Institutional Licensing (B2B SaaS)**.
 * **Tier Architecture:**
   * *Free Tier ($0):* Complete honest fit evaluation (5 JDs/week, 15 stored snapshots, 4-category taxonomy, 5 qualitative tiers, gap severity classification). Core decision honesty is never paywalled.
-  * *Premium Tier ($15/mo `[PLANNING ASSUMPTION]`):* Unlimited snapshot storage, STAR interview answer generator, deep GitHub code parsing, multi-track search profiles.
-* **Unit Economics Benchmark:** Baseline Gross Margin $\sim 82\text{--}87\%$ after LLM inference costs ($\sim \$1.85/\text{paid user}/\text{month}$); Base Case $LTV:CAC \sim 6.15\times$ with payback period $< 1 \text{ month}$ `[PLANNING ASSUMPTION]`.
+  * *Premium Tier ($15/month):* Unlimited snapshot storage, STAR interview answer generator, deep GitHub code parsing, multi-track search profiles.
+* **Unit Economics Model:** Baseline Gross Margin $\sim 82\text{--}87\%$ after LLM inference costs ($\sim \$1.85/\text{paid user}/\text{month}$); Target $LTV:CAC \sim 6.15\times$ with payback period $< 1 \text{ month}$.
 * **GTM Strategy:** Founder-led campus workshops & student Discord/club hubs (Phase 1) ➔ Public JD breakdown teardown content & peer referral passes (Phase 2) ➔ University career services enterprise licensing (Phase 3).
-
----
-
-## Recommended Visual Artifacts
-
-The following visual design artifacts are specified in the case study for future standalone asset production:
-
-1. **End-to-End Decision Architecture Diagram:** Full visual mapping of the 6-stage candidate workflow from resume parsing to interview retrieval.
-2. **Job-Fit Analysis Interactive UI Spec:** High-fidelity mockup of the 5 qualitative tiers, side-by-side quote citation drawer, and 4-level gap severity tags (specified in [`03-User-Experience/wireframe-specification.md`](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/03-User-Experience/wireframe-specification.md)).
-3. **Kanban Pipeline & Immutable Snapshot View:** UI mockup showing preserved raw JD text and interview preparation context drawer.
-4. **Value Proposition Canvas & Strategic Positioning Map:** Visual chart plotting AI Career Copilot against job boards, ATS scanners, and generic LLMs.
 
 ---
 
@@ -210,7 +197,7 @@ Explore the complete modular documentation across all nine Product Management ph
 
 ## What This Case Study Demonstrates
 
-This portfolio project provides tangible, interview-defensible proof of core Product Management competencies:
+This portfolio project demonstrates end-to-end Product Management rigor across the full lifecycle:
 
 * **Rigorous Problem Framing:** Grounding product concepts in root-cause analysis, JTBD progress statements, and acute user pain rather than technology for its own sake.
 * **Strategic Trade-Off Judgment:** Defending hard architectural decisions (e.g., rejecting single match scores, raw paste before scraping, candidate agency over spam bots).
@@ -225,22 +212,8 @@ This portfolio project provides tangible, interview-defensible proof of core Pro
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────────────────────┐
-│   PROJECT STATUS: Phase 9 Complete — Final Portfolio Case Study                             │
-│   All 9 core Product Management phases are fully authored, cross-linked, and validated.     │
+│   STATUS: Final Portfolio Case Study — All 9 PM Phases Complete                             │
 └─────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
----
-
-## Anti-Fabrication & Analytical Governance Notice
-
-In strict compliance with Product Management portfolio governance:
-* This case study represents an **analytical product design, strategy, and specification framework**.
-* It does **not** assert pre-existing commercial adoption, synthetic user research statistics, fabricated A/B test outcomes, unverified revenue numbers, or active production deployment.
-* All future research requirements, unit economics assumptions, and experimental metrics are explicitly tagged:
-  * `[FACT]` — Verifiable industry truth or desk research finding.
-  * `[ASSUMPTION]` — Working assumption requiring operational testing.
-  * `[HYPOTHESIS]` — Falsifiable proposition subject to experimentation.
-  * `[PRODUCT INFERENCE]` — Strategic product deduction derived from workflow analysis.
-  * `[DESIGN TARGET]` — Operational standard or quality threshold.
-  * `[PLANNING ASSUMPTION]` — Financial and unit economics sensitivity modeling parameter.
+*Note: This case study is an analytical product management design and strategy specification.*
