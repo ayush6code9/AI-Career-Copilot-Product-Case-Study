@@ -163,6 +163,22 @@ Phase 8 establishes a dependency-aware, experiment-gated execution roadmap and r
 * [Post-MVP Product Roadmap](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/08-Roadmap/post-mvp-roadmap.md): Long-term capability themes (Reliability, Portfolio Intelligence, Workflow Depth, Market Radar).
 * [Roadmap Decision Log](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/08-Roadmap/roadmap-decision-log.md): 7 interview-defensible strategic roadmap decisions (RD-01 to RD-07) detailing trade-offs and revisit triggers.
 
+## Business & Commercial Strategy
+
+Phase 9 establishes an analytical business model, unit economics sensitivity framework, and go-to-market distribution strategy:
+
+* [Phase 9 Overview & Directory](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/09-Business/README.md): Commercial methodology summary, business flywheel diagrams, and core viability conditions.
+* [Value Proposition Strategy](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/09-Business/value-proposition.md): Value Proposition Canvas, customer jobs/pains/gains, and core differentiation vs. status-quo tools.
+* [Customer Segmentation & Beachhead](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/09-Business/customer-segmentation.md): 5-segment evaluation matrix and technical early-career beachhead selection rationale.
+* [Competitive Landscape & Positioning](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/09-Business/competitive-positioning.md): Categorical competitor analysis, comparison matrix, and core positioning statement.
+* [Business Model Strategy](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/09-Business/business-model.md): Evaluation of 5 candidate business models and recommended phased Freemium B2C / University B2B strategy.
+* [Monetization Strategy & Tier Architecture](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/09-Business/monetization-strategy.md): Free vs. Premium tier boundaries, natural upgrade triggers, and pricing elasticity experiments.
+* [Go-to-Market (GTM) Strategy](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/09-Business/go-to-market-strategy.md): 3-phase GTM roadmap (Campus Community ➔ Content/Referral ➔ University Partnerships) and channel evaluation.
+* [Unit Economics & Financial Assumptions](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/09-Business/unit-economics-assumptions.md): SaaS financial model, AI inference COGS breakdown, and 3-scenario sensitivity analysis.
+* [Business Metrics & Telemetry](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/09-Business/business-metrics.md): Commercial metric hierarchy, unit economics KPIs, and margin guardrail thresholds.
+* [Business Risk Management](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/09-Business/business-risks.md): 8 core business risks (BR-01 to BR-08) with early warning signals, mitigations, and contingency plans.
+* [Business Decision Log](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/09-Business/business-decision-log.md): 7 interview-defensible commercial decision records (BD-01 to BD-07) detailing trade-offs and revisit triggers.
+
 ---
 
 ## Product Management Case Study Structure
@@ -196,8 +212,8 @@ This repository is organized into modular product case study artifacts:
 | **Phase 6** | **Metrics & Telemetry** | **Complete** | [06-Metrics/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/06-Metrics) (North Star Metric W-HCCD, Metric Hierarchy, Event Taxonomy, Funnel Diagnostics) |
 | **Phase 7** | **Experimentation** | **Complete** | [07-Experimentation/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/07-Experimentation) (Hypothesis Backlog, 5 Experiment Designs, Validation Roadmap, Decision Rules) |
 | **Phase 8** | **Product Roadmap** | **Complete** | [08-Roadmap/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/08-Roadmap) (Roadmap Strategy, MVP Increments, Now/Next/Later, Dependencies, Release Plan) |
-| **Phase 9** | **Business Model & Unit Economics** | *Pending* | Monetization Hypotheses, Unit Economics & Business Risks |
+| **Phase 9** | **Business Model & Strategy** | **Complete** | [09-Business/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/09-Business) (Value Prop, Segmentation, Business Model, Pricing, GTM, Unit Economics) |
 
-> **Current Milestone:** Phase 8 Complete — Ready for Phase 9 (Business & Commercial Strategy)
+> **Current Milestone:** Phase 9 Complete — Ready for Final Portfolio / Case Study Packaging
 
 *Note: This repository contains an analytical product strategy and design case study. It does not assert pre-existing commercial adoption, unvalidated revenue figures, or synthetic user validation metrics.*
