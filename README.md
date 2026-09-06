@@ -138,6 +138,18 @@ Phase 6 establishes a comprehensive measurement architecture, North Star Metric 
 * [Experimentation Framework](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/06-Metrics/experiment-metrics.md): 4 future A/B testing plans (Qualitative Tiers vs. Scores, Evidence-First UI, Raw Paste vs. URL, Auto-Queue vs. Agency).
 * [Metrics Decision Log](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/06-Metrics/metrics-decision-log.md): 6 interview-defensible telemetry decision records with context, rationales, and revisit triggers.
 
+## Experimentation & Validation
+
+Phase 7 establishes a scientific experimentation and progressive uncertainty reduction framework:
+
+* [Phase 7 Overview & Directory](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/07-Experimentation/README.md): Methodology summary, core experiments, validation stages, and artifact directory.
+* [Experimentation Framework & Philosophy](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/07-Experimentation/experimentation-framework.md): 6-stage uncertainty reduction sequence, dual-track AI validation, and experimentation anti-patterns.
+* [Hypothesis Backlog](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/07-Experimentation/hypothesis-backlog.md): Consolidated backlog of 10 falsifiable hypotheses categorized by risk, uncertainty, validation method, and priority tier (P0/P1/P2).
+* [Experiment Designs & Protocols](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/07-Experimentation/experiment-designs.md): 5 formal experiment specifications (EXP-01 Qualitative Tiers, EXP-02 Evidence Citations, EXP-03 Raw Text Paste, EXP-04 3-Tier Queue, EXP-05 Core Value Benchmark).
+* [Staged Validation Plan](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/07-Experimentation/validation-plan.md): 5-stage progressive validation roadmap (Problem, Prototype, Workflow Benchmark, Cohort Pilot, Controlled A/B Tests) with exit criteria.
+* [Decision Rules & Traceability](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/07-Experimentation/decision-rules.md): Post-experiment decision taxonomy (Positive, Mixed, Neutral, Negative, Kill-Switch) and end-to-end traceability matrix.
+* [Experimentation Decision Log](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/07-Experimentation/experimentation-decision-log.md): 6 research decision records detailing rationales, alternatives, consequences, and revisit triggers.
+
 ---
 
 ## Product Management Case Study Structure
@@ -169,10 +181,10 @@ This repository is organized into modular product case study artifacts:
 | **Phase 4** | **PRD & Requirements** | **Complete** | [04-PRD/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/04-PRD) (20-Section PRD Specification, Functional Requirements, Acceptance Criteria) |
 | **Phase 5** | **Product Prioritization** | **Complete** | [05-Prioritization/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/05-Prioritization) (DAVR Framework, Scored Backlog, 6 Trade-offs, Dependency Map, Decision Log) |
 | **Phase 6** | **Metrics & Telemetry** | **Complete** | [06-Metrics/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/06-Metrics) (North Star Metric W-HCCD, Metric Hierarchy, Event Taxonomy, Funnel Diagnostics) |
-| **Phase 7** | **Experimentation** | *Pending* | Experimentation Design & Validation Plans |
+| **Phase 7** | **Experimentation** | **Complete** | [07-Experimentation/](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/07-Experimentation) (Hypothesis Backlog, 5 Experiment Designs, Validation Roadmap, Decision Rules) |
 | **Phase 8** | **Product Roadmap** | *Pending* | Phased Capability Progression (Now / Next / Later) |
 | **Phase 9** | **Business Model & Unit Economics** | *Pending* | Monetization Hypotheses, Unit Economics & Business Risks |
 
-> **Current Milestone:** Phase 6 Complete — Ready for Phase 7 (Experimentation)
+> **Current Milestone:** Phase 7 Complete — Ready for Phase 8 (Product Roadmap)
 
 *Note: This repository contains an analytical product strategy and design case study. It does not assert pre-existing commercial adoption, unvalidated revenue figures, or synthetic user validation metrics.*
