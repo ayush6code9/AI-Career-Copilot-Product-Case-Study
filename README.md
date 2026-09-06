@@ -125,6 +125,19 @@ Phase 5 establishes a structured, dependency-aware prioritization framework and 
 * [Dependency Map & Critical Path](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/05-Prioritization/dependency-map.md): Topological sequencing, hard blockers, soft enhancers, and 4-sprint release path.
 * [Prioritization Decision Log](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/05-Prioritization/prioritization-decision-log.md): 6 interview-defensible decision records with context, rationales, and revisit triggers.
 
+## Product Metrics & Telemetry
+
+Phase 6 establishes a comprehensive measurement architecture, North Star Metric specification, telemetry schema, and experimentation plan:
+
+* [Phase 6 Overview & Directory](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/06-Metrics/README.md): Measurement philosophy, North Star summary, and artifact directory.
+* [Metrics Framework & Hierarchy](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/06-Metrics/metrics-framework.md): 5-level metric hierarchy, 9 functional dimensions, 5 guardrail metrics, and metric anti-patterns.
+* [North Star Metric Specification](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/06-Metrics/north-star-metric.md): Weekly High-Confidence Career Decisions (W-HCCD), operational definitions, input driver decomposition, and limitations.
+* [Metric Definitions Dictionary](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/06-Metrics/metric-definitions.md): Exhaustive metric definitions with mathematical formulas, telemetry sources, and problem traceability.
+* [Event Instrumentation Taxonomy](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/06-Metrics/event-taxonomy.md): Event triggers, properties, sampling strategy, and strict PII privacy boundaries.
+* [Product Funnel & Diagnostics](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/06-Metrics/funnel-analysis.md): 10-stage core conversion funnel, drop-off signals, and diagnostic ratios (OFR, CPR, QAR).
+* [Experimentation Framework](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/06-Metrics/experiment-metrics.md): 4 future A/B testing plans (Qualitative Tiers vs. Scores, Evidence-First UI, Raw Paste vs. URL, Auto-Queue vs. Agency).
+* [Metrics Decision Log](file:///Users/ayushkumarsingh/Downloads/AI-Career-Copilot-Product-Case-Study/06-Metrics/metrics-decision-log.md): 6 interview-defensible telemetry decision records with context, rationales, and revisit triggers.
+
 ---
 
 ## Product Management Case Study Structure
@@ -148,7 +161,7 @@ This repository is organized into modular product case study artifacts:
 
 ## Project Status
 
-> **Status:** Phase 5 Complete (Product Prioritization)  
-> **Current Milestone:** Prioritization framework (DAVR), scored backlog, trade-offs, dependency critical path, and decision logs locked. Ready for Phase 6 (Metrics & Telemetry).
+> **Status:** Phase 6 Complete (Product Metrics & Telemetry)  
+> **Current Milestone:** North Star Metric (W-HCCD), 5-level metric hierarchy, telemetry event taxonomy, funnel diagnostics, and experimentation plans locked. Ready for Phase 7 (Experimentation & Validation).
 
 *Note: This repository contains an analytical product strategy and design case study. It does not assert pre-existing commercial adoption, unvalidated revenue figures, or synthetic user validation metrics.*
